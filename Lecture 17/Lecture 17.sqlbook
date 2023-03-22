@@ -255,8 +255,8 @@ Equivalence:
 
 **PYTHON** $\qquad \qquad \ \ $ **SQL** <br>
 ```[] ``` $\qquad \qquad \qquad \ \ \ $ ```SELECT``` <br>
-```.query() ``` $\qquad \qquad $ ```WHERE``` (before subsetting) <br>
-```.query() ``` $\qquad \qquad $ ```HAVING``` (after subsetting) <br>
+```.query() ``` $\qquad \qquad $ ```WHERE``` (before aggregating) <br>
+```.query() ``` $\qquad \qquad $ ```HAVING``` (after aggregating) <br>
 ```.groupby().agg() ``` $\ $ ```SELECT ... AS ... ```<br>
 $\qquad \qquad \qquad \qquad \ $```GROUP BY```<br>
 
