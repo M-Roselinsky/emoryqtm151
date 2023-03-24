@@ -102,7 +102,10 @@ Try it yourself!
 
 INSERT INTO drivers  VALUES (18, 'Mia Roselinsky','American',140);
 
+<<<<<<< HEAD
 INSERT INTO drivers  VALUES (11, 'Berkeley Roselinsky','American',132);
+=======
+>>>>>>> upstream/main
 -- SQLBook: Markup
 # <span style="color:darkblue"> II. Dataset Operations </span>
 
@@ -133,7 +136,7 @@ WHERE nationality = 'German';
 
 -- Evalute OR conditions
 SELECT * FROM drivers
-WHERE (nationality = 'German') OR (nationality = 'British');
+WHERE (nationality = 'United States') OR (nationality = 'Indian');
 
 -- Evaluate AND conditions
 SELECT * FROM drivers
@@ -148,8 +151,8 @@ Aggregate
 -- such as SUM() or AVG() 
 -- The AS is an alias which assigns a name to the aggregate statistic
 
-SELECT COUNT(*) AS num_rows,
-       SUM(victories) AS sum_victories,
+SELECT SUM(victories) AS sum_victories,
+       COUNT(*) AS num_rows,
        AVG(victories) AS mean_victories,
        MIN(victories) AS min_victories,
        MAX(victories) AS max_victories
@@ -190,9 +193,12 @@ with more than 60 victories
 -- Write your own code!
 
 
+<<<<<<< HEAD
 SELECT driver_id, nationality FROM drivers
 WHERE (victories >= 60);
 
+=======
+>>>>>>> upstream/main
 
 -- SQLBook: Markup
 # <span style="color:darkblue"> III. Groupby + Chaining </span>
