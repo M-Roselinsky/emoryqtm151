@@ -102,10 +102,8 @@ Try it yourself!
 
 INSERT INTO drivers  VALUES (18, 'Mia Roselinsky','American',140);
 
-<<<<<<< HEAD
 INSERT INTO drivers  VALUES (11, 'Berkeley Roselinsky','American',132);
-=======
->>>>>>> upstream/main
+
 -- SQLBook: Markup
 # <span style="color:darkblue"> II. Dataset Operations </span>
 
@@ -193,12 +191,9 @@ with more than 60 victories
 -- Write your own code!
 
 
-<<<<<<< HEAD
 SELECT driver_id, nationality FROM drivers
 WHERE (victories >= 60);
 
-=======
->>>>>>> upstream/main
 
 -- SQLBook: Markup
 # <span style="color:darkblue"> III. Groupby + Chaining </span>
