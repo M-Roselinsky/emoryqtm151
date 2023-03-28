@@ -113,6 +113,13 @@ from ".csv" files using the command <br>
 - Display the dataset using ``` SELECT * FROM .... ```
 - See Lecture 18 for more details
 
+-- SQLBook: Code
+COPY us_congress_members
+FROM '/private/tmp/data/us_congress_members.csv' 
+WITH (DELIMITER ',', FORMAT csv, HEADER MATCH);
+
+
+SELECT * FROM us_congress_members;
 -- SQLBook: Markup
 <font size = "5">
 
@@ -172,3 +179,8 @@ HAVING MIN(rating) > 6;
 (d) Merge two tables
 
 - Merge the two tables using ``` LEFT JOIN ```
+-- SQLBook: Code
+SELECT * 
+FROM bills_actions
+LEFT JOIN us_congress_members
+ON us_congress_members.member_id  = bills_actions.member_id;

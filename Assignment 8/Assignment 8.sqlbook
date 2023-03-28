@@ -31,9 +31,6 @@ HINT: Remember that you have to find the pathname of the <br>
 HINT: Include any column names with upper case in doube quotations, <br> e.g.
 "raceId". If you don't you'll get an error
 -- SQLBook: Code
--- Write your own code
-
-
 DROP TABLE IF EXISTS results;
 
 CREATE TABLE results(
@@ -44,8 +41,13 @@ CREATE TABLE results(
     time varchar(255),
     milliseconds int
 )
+-- SQLBook: Code
 
+COPY lap_times
+FROM '/private/tmp/data_raw/lap_times.csv'
+WITH (DELIMITER ',', FORMAT csv, HEADER MATCH);
 
+SELECT * FROM lap_times;
 -- SQLBook: Markup
 <font size = "5">
 
