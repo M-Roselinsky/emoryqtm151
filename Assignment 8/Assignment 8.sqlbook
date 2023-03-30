@@ -126,7 +126,7 @@ upper case and lower case letters
 
 SELECT COUNT(DISTINCT "driverId") AS "num_distinct_driverId",
        COUNT(*) AS num_drivers       
-FROM drivers
+FROM drivers;
 
 -- SQLBook: Markup
 <font size = "5">
@@ -143,7 +143,7 @@ HINT: Include "driverId" in quotations since it has a mix of <br>
 upper case and lower case letters
 -- SQLBook: Code
 -- Write your own code
---interpreted the typo as ORDER BY to sort on the average of points
+--interpreted the typo as ORDER BY to sort on the average of milliseconds
 SELECT "driverId",
        AVG(milliseconds) AS mean_milliseconds
 FROM lap_times
